@@ -200,6 +200,13 @@ private void somarValores() {
     
     // Alterar o texto do JLabel com a soma dos valores
     jLabel9.setText("" + somaValores);
+    if(somaValores > 2 && somaValores < 9){
+        jLabel9.setText(somaValores + " grave");
+    }else if (somaValores > 8 && somaValores < 13){
+        jLabel9.setText(somaValores + " moderado");
+    }else if (somaValores > 12 && somaValores < 16){
+        jLabel9.setText(somaValores + " leve");
+    }
 }
     /**
      * @param args the command line arguments
